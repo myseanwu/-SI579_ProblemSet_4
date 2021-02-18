@@ -16,6 +16,7 @@ let timeStart =()=>{
     t =setInterval(update_timer,1000);
     startBtn.setAttribute('disabled', 'true');
     stopBtn.removeAttribute('disabled');
+    resetBtn.removeAttribute('disabled');
 
 };
 
@@ -23,6 +24,7 @@ let timeStop = ()=>{
     clearInterval(t);
     stopBtn.setAttribute('disabled', 'true');
     startBtn.removeAttribute('disabled');
+    resetBtn.removeAttribute('disabled');
 };
 
 let timeReset = ()=>{
